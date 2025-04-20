@@ -1,0 +1,20 @@
+name: Check clang-format
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  clang-format-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install clang-format
+        run: sudo apt-get update && sudo apt-get install -y clang-format
+
+      - name: Run clang-format check
+        run: |
+          FILES=$(find . -regex '.*\.\(cpp\|hpp\|cc\|cxx\|h\|c\)' -not -path "./build/*")
+          clang-format --dry-run --Werror $FILES
