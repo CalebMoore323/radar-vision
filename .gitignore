@@ -1,0 +1,30 @@
+# Build artifacts
+/build/
+/bin/
+/obj/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled source
+*.out
+*.o
+*.lo
+*.la
+*.al
+*.gch
+*.so
+*.a
+*.dylib
+*.dll
+*.exe
+
+# Logs and other
+*.log
+*.swp
+*.DS_Store
+*.idea/
+*.vscode/
