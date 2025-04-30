@@ -2,7 +2,7 @@
 
 A C++ project for radar-based object detection and tracking.
 
-![clang-format](https://github.com/CalebMoore323/radar-vision/actions/workflows/clang-format.yml/badge.svg)
+[![Check clang-format](https://github.com/CalebMoore323/radar-vision/actions/workflows/clang-format.yaml/badge.svg)](https://github.com/CalebMoore323/radar-vision/actions/workflows/clang-format.yaml)
 
 ## Project Wiki
 [Project Wiki](https://github.com/CalebMoore323/radar-vision/wiki)
